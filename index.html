@@ -3,36 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Globex Security Landingpage</title>
+    <title>Globex Security</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="design.css">
 </head>
 <body>
 
-    <video autoplay muted loop playsinline id="bg-video">
-        <source src="video.mp4" type="video/mp4">
-    </video>
-
-    <div class="content">
-        <div class="glass-card">
-            
-            <div class="bot-profile">
-                <img src="bot-logo.png" alt="Bot Logo">
-                <h1>Globex Security</h1> </div>
-            
-            <div class="button-container">
-                <a href="https://discord.gg/az5mqQg6Sn" target="_blank" class="icon-btn discord">
-                    <i class="fa-brands fa-discord"></i>
-                    <span>Support</span>
-                </a>
-
-                <a href="https://discord.com/oauth2/authorize?client_id=1355616888624910396&permissions=8&integration_type=0&scope=bot" target="_blank" class="icon-btn invite">
-                    <i class="fa-solid fa-plus-circle"></i>
-                    <span>Invite</span>
-                </a>
-            </div>
-        </div>
+    <div class="video-wrapper">
+        <video autoplay muted loop playsinline id="bg-video">
+            <source src="video.mp4" type="video/mp4">
+        </video>
     </div>
+
+    <main class="viewport-center">
+        <section class="main-card">
+            
+            <div class="bot-header">
+                <img src="bot-logo.png" alt="Globex Logo" class="avatar">
+                <h1 class="brand-name">Globex Security</h1>
+            </div>
+            
+            <nav class="action-links">
+                <a href="https://discord.gg/az5mqQg6Sn" target="_blank" class="btn-item discord-style">
+                    <i class="fa-brands fa-discord"></i>
+                    <span class="label">Support</span>
+                </a>
+
+                <a href="https://discord.com/oauth2/authorize?client_id=1355616888624910396&permissions=8&integration_type=0&scope=bot" target="_blank" class="btn-item invite-style">
+                    <i class="fa-solid fa-plus-circle"></i>
+                    <span class="label">Invite</span>
+                </a>
+            </nav>
+
+            <div class="stats">
+                <p>Guild Count: <span class="count-number">56</span></p>
+            </div>
+
+        </section>
+    </main>
 
 </body>
 </html>
